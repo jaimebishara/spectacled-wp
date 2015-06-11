@@ -1,3 +1,22 @@
+// header.banner {
+// 	width: 65%;
+// }
+
 a.brand {
-	color:blue;
+	color:green;
+}
+
+ul.nav {
+    width:65%;
+    border-bottom: solid 1px;
+    border-top: solid 1px;
+
+    li {
+    	text-transform: uppercase;
+		display: inline-block;
+
+        a {
+            padding:10px;
+        }
+    }
 }

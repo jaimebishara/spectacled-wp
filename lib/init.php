@@ -64,3 +64,26 @@ function widgets_init() {
   ]);
 }
 add_action('widgets_init', __NAMESPACE__ . '\\widgets_init');
+
+// register custom post types
+
+function spectacled_custom_post_type_init() {
+  register_post_type(
+    'articles', array(
+    'labels' => array('name' => __( 'Articles' ), 'singular_name' => __( 'Article' ), 'add_new_item' => 'Add an Article' ),
+     'public' => true,
+     'has_archive' => true,
+     'supports' => array('title', 'editor', 'thumbnail'),
+     )
+    );
+
+  register_post_type(
+    'get_to_know', array(
+    'labels' => array('name' => __( 'Get to Know' ), 'singular_name' => __( 'Get to Know Article' ), 'add_new_item' => 'Add new Get to Know Article' ),
+     'public' => true,
+     'has_archive' => true,
+     'supports' => array('title', 'editor', 'thumbnail'),
+     )
+    );
+}
+add_action('init', __NAMESPACE__ . '\\spectacled_custom_post_type_init');
