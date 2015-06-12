@@ -1,7 +1,22 @@
 .sidebar {
 	background: lightgray;
 	text-align: center;
-	text-transform: uppercase;
 	position: relative;
 	top: -45px;
+	padding-bottom: 100px;
 }
+
+.article-sidebar {
+	min-height: 250px;
+	background-size: cover;
+	background-repeat: no-repeat;
+
+	span.post-type-label {
+		color: #fff;
+		text-align: left;
+		font-style: italic;
+		display: block;
+		background-color: rgba(0,0,0,0.3);
+	}
+}
+

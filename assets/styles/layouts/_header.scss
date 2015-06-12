@@ -2,6 +2,10 @@
 // 	width: 65%;
 // }
 
+.logo {
+    width: 100%;
+}
+
 a.brand {
 	color:green;
 }
@@ -19,4 +23,8 @@ ul.nav {
             padding:10px;
         }
     }
+}
+
+.nav>li>a:focus, .nav>li>a:hover{
+    background-color: white;
 }

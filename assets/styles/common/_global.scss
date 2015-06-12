@@ -1,1 +1,32 @@
+// defaults
 
+h1 {
+
+}
+
+h2 {
+
+}
+
+// variations
+
+h2.secondary{
+	color: #fff;
+	text-transform: uppercase;
+	margin-top: 0;
+	background-color: rgba(0,0,0,0.3);
+}
+
+
+a {
+	color:#000;
+
+	&:hover{
+		color:#000;
+		font-weight: bold;
+	}
+}
+
+body {
+
+}

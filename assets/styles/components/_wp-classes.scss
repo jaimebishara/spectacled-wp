@@ -40,3 +40,9 @@
   @extend .sr-only;
   @extend .sr-only-focusable;
 }
+
+//active menu items
+
+li.current_page_item {
+  font-weight: bold;
+}
