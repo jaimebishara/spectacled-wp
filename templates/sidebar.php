@@ -1,13 +1,17 @@
 <div>
 	<!-- <?php dynamic_sidebar('sidebar-primary'); ?> -->
 
-	<a href="http://www.facebook.com/TheSpectacled" title="Facebook" target="_blank"><fa class="fa fa-facebook-official"></fa></a>
+	<a href="http://www.facebook.com/TheSpectacled" class="social" title="Facebook" target="_blank"><fa class="fa fa-facebook-official"></fa></a>
 
-	<a href="http://twitter.com/thespectacled/" title="Twitter" target="_blank"><fa class="fa fa-twitter"></fa></a>
+	<a href="http://twitter.com/thespectacled/" class="social" title="Twitter" target="_blank"><fa class="fa fa-twitter"></fa></a>
 
-	<a href="http://www.instagram.com/thespectacled/" title="Instagram" target="_blank"><fa class="fa fa-instagram"></fa></a>
+	<a href="http://www.instagram.com/thespectacled/" class="social" title="Instagram" target="_blank"><fa class="fa fa-instagram"></fa></a>
 
 	<?php get_search_form(); ?>
+
+	<p><a href="<?php echo get_permalink(get_page_by_path('archives')); ?>">Archives</a></p>
+
+	<p><a href="<?php echo get_permalink( get_page_by_path( 'tags' ) ); ?>">Tags</a></p>
 
 	<h3>On Instagram</h3>
 
@@ -26,7 +30,7 @@
 		'exclude'          => '',
 		'meta_key'         => '',
 		'meta_value'       => '',
-		'post_type'        => array( 'articles', 'get_to_know' ),
+		'post_type'        => array( 'article', 'get_to_know' ),
 		'post_mime_type'   => '',
 		'post_parent'      => '',
 		'post_status'      => 'publish',

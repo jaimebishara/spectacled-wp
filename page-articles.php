@@ -9,7 +9,7 @@
 	'exclude'          => '',
 	'meta_key'         => '',
 	'meta_value'       => '',
-	'post_type'        => array( 'articles', 'get_to_know' ),
+	'post_type'        => array( 'article', 'get_to_know' ),
 	'post_mime_type'   => '',
 	'post_parent'      => '',
 	'post_status'      => 'publish',

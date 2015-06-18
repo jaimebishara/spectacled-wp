@@ -69,7 +69,7 @@ add_action('widgets_init', __NAMESPACE__ . '\\widgets_init');
 
 function spectacled_custom_post_type_init() {
   register_post_type(
-    'articles', array(
+    'article', array(
     'labels' => array('name' => __( 'Articles' ), 'singular_name' => __( 'Article' ), 'add_new_item' => 'Add an Article' ),
      'public' => true,
      'has_archive' => true,

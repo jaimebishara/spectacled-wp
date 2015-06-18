@@ -28,7 +28,7 @@ $meta_boxes = array();
 // 2nd meta box
 $meta_boxes[] = array(
 	'title' => 'Post Images',
-	'pages' => array( 'post', 'articles', 'get_to_know'),
+	'pages' => array( 'post', 'article', 'get_to_know'),
 	'fields' => array(
 		// PLUPLOAD IMAGE UPLOAD (WP 3.3+)
 		array(
