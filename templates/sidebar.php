@@ -9,15 +9,15 @@
 
 	<?php get_search_form(); ?>
 
-	<p><a href="<?php echo get_permalink(get_page_by_path('archives')); ?>">Archives</a></p>
+	<h6><a href="<?php echo get_permalink(get_page_by_path('archives')); ?>">Archives</a></h6>
 
-	<p><a href="<?php echo get_permalink( get_page_by_path( 'tags' ) ); ?>">Tags</a></p>
+	<h6><a href="<?php echo get_permalink( get_page_by_path( 'tags' ) ); ?>">Tags</a></h6>
 
-	<h3>On Instagram</h3>
+	<h4 class="sidebarTitle">On Instagram</h4>
 
 	<?php echo do_shortcode('[instagram-feed num=2 cols=2]'); ?>
 
-	<h3>Latest Articles</h3>
+	<h4 class="sidebarTitle">Latest Articles</h4>
 
 	<?php $args = array(
 		'posts_per_page'   => 2,
