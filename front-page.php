@@ -26,13 +26,16 @@ $posts_array = get_posts( $args ); ?>
 	foreach ($posts_array as $post ) : setup_postdata( $post );
 		?>
 		<div class="col-sm-4 col-xs-6">
-			<?php 
-				$images = rwmb_meta( 'spec_fashion', 'type=image&size=main-image' );
-				foreach ( $images as $image ) {
-					$image_url = $image['url'];
-			} ?>
+  			<div class="homepageImage">
+  				<a href="#" data-reveal-id="myModal-<?php the_ID(); ?>-a"><?php
 
-		<div class="article-homepage-image": url('<?php echo $image_url; ?>');">
+  					$images = rwmb_meta( 'spec_eyewear', 'type=image&size=main-image' );
+  					foreach ( $images as $image ) {
+  					    echo "<img src='{$image['url']}' alt='{$image['alt']}' />";
+  					}
+
+  				?></a>
+  			</div>
 
 			<?php the_title(); ?> // <?php echo the_category(); ?>
 			<a href="<?php the_permalink(); ?>">Read more</a>

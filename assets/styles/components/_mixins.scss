@@ -1,0 +1,8 @@
+@mixin font-face($style-name, $file, $family, $category:"") {
+    $filepath: ‘../fonts’ + $file;
+    @font-face {
+        font-family: "MinionPro-Regular";
+        src: url($filepath + ".otf") format("opentype");
+   
+    }
+
