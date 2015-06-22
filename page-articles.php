@@ -28,7 +28,14 @@ foreach ($posts_array as $post ) : setup_postdata( $post );
 		echo '<span class="post-type-label">Get to know:</span>';
 	}
 	?>
-	<a href="<?php the_permalink(); ?>"><?php the_title(); ?></a>
+	<h2>
+		<a href="<?php the_permalink(); ?>"><?php the_title(); ?></a>
+	</h2>
 	<?php the_content(); ?>
+	<div class="contentTags">
+	  <p>
+	    <?php the_tags( 'tags // ', ', ', '' ); ?> 
+	  </p>
+	</div>
 <?php endforeach;
 wp_reset_postdata(); ?>

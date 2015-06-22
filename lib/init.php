@@ -72,6 +72,7 @@ function spectacled_custom_post_type_init() {
     'article', array(
     'labels' => array('name' => __( 'Articles' ), 'singular_name' => __( 'Article' ), 'add_new_item' => 'Add an Article' ),
      'public' => true,
+     'menu_position' => 3,
      'has_archive' => true,
      'supports' => array('title', 'editor', 'thumbnail'),
      )
@@ -81,6 +82,7 @@ function spectacled_custom_post_type_init() {
     'get_to_know', array(
     'labels' => array('name' => __( 'Get to Know' ), 'singular_name' => __( 'Get to Know Article' ), 'add_new_item' => 'Add new Get to Know Article' ),
      'public' => true,
+     'menu_position' => 4,
      'has_archive' => true,
      'supports' => array('title', 'editor', 'thumbnail'),
      )

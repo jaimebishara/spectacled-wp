@@ -1,8 +1,4 @@
 <article <?php post_class(); ?>>
-  <header>
-    <h2 class="entry-title"><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h2>
-    <?php get_template_part('templates/entry-meta'); ?>
-  </header>
   <div class="col-xs-12">
   	<div class="row" id="post-<?php the_ID(); ?>">
   		<div class="col-xs-6">
@@ -13,8 +9,8 @@
   					foreach ( $images as $image ) {
   					    echo "<img src='{$image['url']}' alt='{$image['alt']}' />";
   					}
-
-  				?></a>
+          ?>
+          </a>
   			</div>
   		</div>
   		<div class="col-xs-6">
@@ -29,7 +25,26 @@
   				?></a>
   			</div>
   		</div>
+
+  <header>
+      <h2 class="entry-title"><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h2>
+<!--       <?php get_template_part('templates/entry-meta'); ?> -->
+  </header>
+
+  <div class="contentCategory">
+    <p>
+      Eyewear: <?php the_category(', '); ?>
+    </p>
+  </div>
+
   <div class="entry-summary">
     <?php the_excerpt(); ?>
   </div>
+  
+  <div class="contentTags">
+    <p>
+      <?php the_tags( 'tags // ', ', ', '' ); ?> 
+    </p>
+  </div>
+
 </article>
