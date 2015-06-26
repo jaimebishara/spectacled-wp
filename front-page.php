@@ -36,10 +36,10 @@ $posts_array = get_posts( $args ); ?>
 
   				?></a>
   			</div>
-
-			<?php the_title(); ?> // <?php echo the_category(); ?>
-			<a href="<?php the_permalink(); ?>">Read more</a>
-			
+			<div class="homepage">
+				<h2><?php the_title(); ?></h2> // <?php echo the_category(); ?>
+				<p><a href="<?php the_permalink(); ?>"><span class="readMore">Read more</span></a></p>
+			</div>	
 		</div>
 	<?php endforeach;
 	wp_reset_postdata(); ?>

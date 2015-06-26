@@ -17,13 +17,14 @@ ul.nav {
     border-bottom: solid 1px;
     border-top: solid 1px;
     margin-bottom: 40px;
+    text-align: center;
 
     li {
     	text-transform: uppercase;
 		display: inline-block;
 
         a {
-            padding:10px;
+            padding:10px 18px;
         }
     }
 }

@@ -18,7 +18,7 @@ foreach($categories as $category) :
 	);
 	$randpostid = ($randpost[0]->ID);
 		?>
-<div class="col-md-2 col-sm-3 col-xs-4">
+<div class="col-md-2 col-sm-3 col-xs-4 designersIndexImage">
 	<?php $images = rwmb_meta( 'spec_eyewear', 'type=image&size=square', $randpostid );
 		foreach ( $images as $image ) {
 		echo '<a href="' . get_category_link( $category->term_id ) . '" title="' . sprintf( __( "View all posts in %s" ), $category->name ) . '" ' . '>

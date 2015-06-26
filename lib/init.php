@@ -89,3 +89,15 @@ function spectacled_custom_post_type_init() {
     );
 }
 add_action('init', __NAMESPACE__ . '\\spectacled_custom_post_type_init');
+
+add_action('init', __NAMESPACE__ . '\\add_categories_to_custom_post_types');
+function add_categories_to_custom_post_types(){
+    register_taxonomy_for_object_type('category', 'articles');
+    register_taxonomy_for_object_type('category', 'get-to-know');
+}
+
+add_action('init', __NAMESPACE__ . '\\add_tags_to_custom_post_types');
+function add_tags_to_custom_post_types(){
+    register_taxonomy_for_object_type('tags', 'articles');
+    register_taxonomy_for_object_type('tags', 'get-to-know');
+}
