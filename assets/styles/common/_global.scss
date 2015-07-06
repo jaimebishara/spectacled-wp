@@ -21,6 +21,16 @@ h4 {
 	font-weight: bold;
 	font-size: 1.1em;
 }
+
+a {
+	color:#000;
+
+	&:visited, &:hover{
+		color:#000;
+		font-weight: bold;
+		text-decoration: none;	
+	}
+}
 // variations
 
 h2.secondary{
@@ -30,20 +40,11 @@ h2.secondary{
 	background-color: rgba(0,0,0,0.3);
 }
 
-
-a {
-	color:#000;
-
-	&:hover{
-		color:#000;
-		font-weight: bold;
-		text-decoration: none;
-	}
-}
-
 span.post-type-label, span.readMore {
 	font-style: italic;
 }
+
+
 
 .styleposts h2, .homepage h2 {
 	font-size: 1em;
@@ -71,9 +72,9 @@ div.contactPageContent img.aligncenter.wp-image-1508, img.aligncenter.size-large
 	  height: 50%;
 }
 
-div.homepageImage img {
-  max-height: 250px;
-}
+// div.homepageImage img {
+//   max-height: 250px;
+// }
 
 .styleposts .col-xs-6, .articleImage .col-xs-6 {
   padding-left: 0px;
@@ -85,7 +86,11 @@ div.homepageImage img {
   height: 350px;
 }
 
-//designer indes
+.homepagePostDescription {
+	min-height: 
+}
+
+//designer index
 
 .col-md-2.col-sm-3.col-xs-4.designersIndexImage {
   height: 175px;

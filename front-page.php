@@ -25,7 +25,7 @@ $posts_array = get_posts( $args ); ?>
 
 	foreach ($posts_array as $post ) : setup_postdata( $post );
 		?>
-		<div class="col-sm-4 col-xs-6">
+		<div class="col-sm-4 col-xs-6 homepagePosts">
   			<div class="homepageImage">
   				<a href="#" data-reveal-id="myModal-<?php the_ID(); ?>-a"><?php
 

@@ -18,8 +18,18 @@
     // All pages
     'common': {
       init: function() {
-        // JavaScript to be fired on all pages
+        // JavaScript to be fired on all pages 
+        $(".article-sidebar").each(function(){
+            var fontSize = 0; 
+            var boxheight = parseInt($(this).height());
+            var textbox = $(this).find(".secondary");
+            do {
+              fontSize +=1;
+              textbox.css('font-size', fontSize+"%");
+            } while (textbox.height() < boxheight/4)
+          });
       },
+
       finalize: function() {
         // JavaScript to be fired on all pages, after page specific JS is fired
       }
