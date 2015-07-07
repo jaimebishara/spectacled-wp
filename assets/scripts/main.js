@@ -26,7 +26,7 @@
             do {
               fontSize +=1;
               textbox.css('font-size', fontSize+"%");
-            } while (textbox.height() < boxheight/4)
+            } while (textbox.height() < boxheight/3);
           });
       },
 

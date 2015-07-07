@@ -13,4 +13,6 @@
 	<?php endwhile; ?>
 </div>
 
-<?php the_posts_navigation(); ?>
+<div style="text-align:center;">
+<?php posts_nav_link( ' &#183; ', 'previous page', 'next page' ); ?>
+</div>

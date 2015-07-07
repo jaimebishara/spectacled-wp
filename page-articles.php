@@ -28,6 +28,7 @@ foreach ($posts_array as $post ) : setup_postdata( $post );
 		echo '<span class="post-type-label">Get to know:</span>';
 	}
 	?>
+<div class="articlePage">
 	<h2 class="articleTitle">
 		<a href="<?php the_permalink(); ?>"><?php the_title(); ?></a>
 	</h2>
@@ -64,5 +65,10 @@ foreach ($posts_array as $post ) : setup_postdata( $post );
 	    <?php the_tags( 'tags // ', ', ', '' ); ?> 
 	  </p>
 	</div>
+</div>
 <?php endforeach;
 wp_reset_postdata(); ?>
+
+<div style="text-align:center;">
+<?php posts_nav_link( ' &#183; ', 'previous page', 'next page' ); ?>
+</div>

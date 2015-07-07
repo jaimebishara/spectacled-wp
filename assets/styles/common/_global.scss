@@ -22,15 +22,24 @@ h4 {
 	font-size: 1.1em;
 }
 
+ul {
+	list-style-type: none;
+}
+
 a {
 	color:#000;
 
 	&:visited, &:hover{
 		color:#000;
-		font-weight: bold;
+		// font-weight: bold;
 		text-decoration: none;	
 	}
 }
+
+p {
+  margin: 10px 0px;
+}
+
 // variations
 
 h2.secondary{
@@ -38,30 +47,38 @@ h2.secondary{
 	text-transform: uppercase;
 	margin-top: 0;
 	background-color: rgba(0,0,0,0.3);
+	width: 100%;
 }
 
 span.post-type-label, span.readMore {
 	font-style: italic;
 }
 
-
-
-.styleposts h2, .homepage h2 {
-	font-size: 1em;
-	margin: 0px;
+div.homepage p {
+	 margin: 0 0 10px;
 }
 
-.homepage h2 {
-	display: inline;
+div.designersIndexImage p {
+  margin: 0px 0px;
+  min-height: 40px;
 }
 
-h2.articleTitle {
-	margin-top: 0px;
+div.contentCategory p {
+  margin: 0 0 10px;
 }
+
+
+// .homepage h2 {
+// 	display: inline;
+// }
+
+// h2.articleTitle {
+// 	margin-top: 0px;
+// }
 
 //images
 
-div.styleposts img, div.homepageImage img, div.designersIndexImage img, div.articleImage img {
+div.designersIndexImage img, div.articleImage img, div.homepageImage img {
 	width: 100%;
 	margin-bottom: 10px;
 	padding-left: 0px;
@@ -72,42 +89,171 @@ div.contactPageContent img.aligncenter.wp-image-1508, img.aligncenter.size-large
 	  height: 50%;
 }
 
-// div.homepageImage img {
-//   max-height: 250px;
-// }
-
-.styleposts .col-xs-6, .articleImage .col-xs-6 {
-  padding-left: 0px;
-}
-
-//homepage
-
-.col-sm-4.col-xs-6 {
-  height: 350px;
-}
-
-.homepagePostDescription {
-	min-height: 
-}
-
-//designer index
-
 .col-md-2.col-sm-3.col-xs-4.designersIndexImage {
   height: 175px;
 }
 
+// div.homepageImage img {
+//   max-height: 250px;
+// }
+// .articleImage .col-xs-6 {
+//   padding-left: 0px;
+// }
+
+//homepage
+
+// .col-sm-4.col-xs-6 {
+//   height: 350px;
+// }
+
+// .homepagePostDescription {
+// 	min-height: 
+// }
+
+//designer index
+
+// .col-md-2.col-sm-3.col-xs-4.designersIndexImage {
+//   height: 175px;
+// }
+
 //contact page
 
-.col-sm-6.contactForm {
-  border-left: 1px solid black;
+// .col-sm-6.contactForm {
+//   border-left: 1px solid black;
+// }
+
+// .styleposts .col-xs-6 {
+//   padding-left: 0px;
+// }
+
+// input.wpcf7-form-control.wpcf7-submit {
+//   background-color: white;
+//   border: 1px solid black;
+//   padding: 2px 26px;
+// }
+
+
+
+/* --------------------------------------------------
+   Table of Contents
+-----------------------------------------------------
+:: General Stuff
+:: Header
+:: Content
+:: Archive
+:: Footer
+*/
+
+
+// .homepagePosts .col-sm-4.col-xs-6 {
+// 	  height: 350px;
+// 	}
+// .homepageImage img {
+// 		width: 100%;
+// 		margin-bottom: 10px;
+// 		padding-left: 0px;
+// 	}
+.homepage {
+  min-height: 70px;
 }
 
-.styleposts .col-xs-6 {
+.homepagePosts {
+		h2{
+			font-size: 1em;
+			margin: 0px;
+			display: inline;
+			}
+}
+
+.styleposts {
+	.col-xs-6 {
+		padding-left: 0px;
+	}
+	div.postImage img {
+		width: 100%;
+		margin-bottom: 10px;
+		padding-left: 0px;
+	}
+	h2 {
+		font-size: 1em;
+		margin: 0px;
+	}
+	.col-xs-12 {
+  	padding-bottom: 30px;
+	}
+}
+
+.articlePage{
+	div.articleImage {
+	  padding-left: 0px;
+	 }
+}
+
+h2.articleTitle {
+	margin-top: 0px;
+	@media (max-width: 320px) {
+	  font-size: 20px;
+	}
+}
+
+a.articleTitle {
+	&:hover{
+		font-weight: normal;
+	}
+}
+
+.articleImage .col-xs-6 {
   padding-left: 0px;
 }
 
-input.wpcf7-form-control.wpcf7-submit {
-  background-color: white;
-  border: 1px solid black;
-  padding: 2px 26px;
+.designersIndexImage {
+	.col-md-2.col-sm-3.col-xs-4 {
+		height: 175px;
+	}
+	img {
+		width: 100%;
+		margin-bottom: 10px;
+		padding-left: 0px;
+	}
 }
+
+
+.contactForm.col-sm-6{
+	 border-left: 1px solid black;
+				input.wpcf7-form-control.wpcf7-submit {
+					background-color: white;
+					border: 1px solid black;
+					padding: 2px 26px;
+				}
+		}
+
+
+
+
+/* -----------------------------------------
+   Responsive
+----------------------------------------- */
+// @media only screen and (max-width: 767px) {
+// 	#logo{
+// 		img{padding:0 100px;}
+// 	}
+
+// 	.content{margin-left:10px;margin-right:10px;
+// 		.postData{margin-left:10px;margin-right:10px;margin-bottom:10px;
+// 			.postName,
+// 			.postinfo{padding-left:0;padding-right:0;}
+// 			.postinfo{
+// 				.block-grid{border:0;width:100%;
+// 					&.one-up{margin:0;}
+// 					li{padding:10px 0;}
+// 				}
+// 			}
+// 		}
+// 	}
+
+// }
+
+
+
+
+

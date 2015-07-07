@@ -13,6 +13,8 @@
 
 	<h6><a href="<?php echo get_permalink( get_page_by_path( 'tags' ) ); ?>">Tags</a></h6>
 
+	<div class="sidebarDesktopContent">
+
 	<h4 class="sidebarTitle">On Instagram</h4>
 
 	<?php echo do_shortcode('[instagram-feed num=2 cols=2]'); ?>
@@ -59,4 +61,5 @@
 		</div>
 		<?php endforeach; ?>
 	<?php wp_reset_postdata(); ?>
+	</div>
 </div>

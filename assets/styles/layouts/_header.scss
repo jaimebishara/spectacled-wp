@@ -6,6 +6,10 @@
     width: 70%;
     margin-left: 15%;
     padding: 20px;
+    @media (max-width: 767px) {
+        width: 100%;
+        margin-left: 0px;
+    }
 }
 
 a.brand {
@@ -16,7 +20,8 @@ ul.nav {
 
     border-bottom: solid 1px;
     border-top: solid 1px;
-    margin-bottom: 40px;
+    // margin-bottom: 40px;
+    margin: 0px 10px 40px -10px;
     text-align: center;
 
     li {
@@ -25,6 +30,9 @@ ul.nav {
 
         a {
             padding:10px 18px;
+            @media (max-width: 320px) {
+              padding: 5px 5px;
+            }
         }
     }
 }
