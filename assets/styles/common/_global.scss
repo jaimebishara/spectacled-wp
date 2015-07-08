@@ -67,15 +67,6 @@ div.contentCategory p {
   margin: 0 0 10px;
 }
 
-
-// .homepage h2 {
-// 	display: inline;
-// }
-
-// h2.articleTitle {
-// 	margin-top: 0px;
-// }
-
 //images
 
 div.designersIndexImage img, div.articleImage img, div.homepageImage img {
@@ -91,6 +82,10 @@ div.contactPageContent img.aligncenter.wp-image-1508, img.aligncenter.size-large
 
 .col-md-2.col-sm-3.col-xs-4.designersIndexImage {
   height: 175px;
+}
+
+div.articleImage img {
+	padding: 0 15px;
 }
 
 // div.homepageImage img {
@@ -153,6 +148,9 @@ div.contactPageContent img.aligncenter.wp-image-1508, img.aligncenter.size-large
 // 		margin-bottom: 10px;
 // 		padding-left: 0px;
 // 	}
+
+// homepage
+
 .homepage {
   min-height: 70px;
 }
@@ -164,6 +162,8 @@ div.contactPageContent img.aligncenter.wp-image-1508, img.aligncenter.size-large
 			display: inline;
 			}
 }
+
+// styleposts
 
 .styleposts {
 	.col-xs-6 {
@@ -183,10 +183,14 @@ div.contactPageContent img.aligncenter.wp-image-1508, img.aligncenter.size-large
 	}
 }
 
-.articlePage{
-	div.articleImage {
-	  padding-left: 0px;
-	 }
+// article posts
+
+// .entry-content p, {
+// 	padding: 0 15px;
+// }
+
+.entry-content {
+  padding-bottom: 30px;
 }
 
 h2.articleTitle {
@@ -196,15 +200,11 @@ h2.articleTitle {
 	}
 }
 
-a.articleTitle {
-	&:hover{
-		font-weight: normal;
-	}
-}
-
 .articleImage .col-xs-6 {
   padding-left: 0px;
 }
+
+// designer index
 
 .designersIndexImage {
 	.col-md-2.col-sm-3.col-xs-4 {
@@ -216,6 +216,8 @@ a.articleTitle {
 		padding-left: 0px;
 	}
 }
+
+// contact form
 
 
 .contactForm.col-sm-6{

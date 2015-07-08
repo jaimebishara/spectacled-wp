@@ -18,17 +18,23 @@
     // All pages
     'common': {
       init: function() {
-        // JavaScript to be fired on all pages 
-        $(".article-sidebar").each(function(){
-            var fontSize = 0; 
-            var boxheight = parseInt($(this).height());
-            var textbox = $(this).find(".secondary");
-            do {
-              fontSize +=1;
-              textbox.css('font-size', fontSize+"%");
-            } while (textbox.height() < boxheight/3);
-          });
+        // JavaScript to be fired on all pages   
+        function sizeText (){  
+          $(".article-sidebar").each(function(){
+              var fontSize = 0; 
+              var boxheight = parseInt($(this).height());
+              var textbox = $(this).find(".secondary");
+              do {
+                fontSize +=1;
+                textbox.css('font-size', fontSize+"px");
+                console.log(textbox[0].scrollWidth);
+              } while (textbox.height() < boxheight/3 && textbox[0].scrollWidth <= $(this).width());
+            });
+        }
+         sizeText();
+         $(window).resize(sizeText);
       },
+
 
       finalize: function() {
         // JavaScript to be fired on all pages, after page specific JS is fired
