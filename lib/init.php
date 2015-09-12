@@ -74,6 +74,7 @@ function spectacled_custom_post_type_init() {
      'public' => true,
      'menu_position' => 4,
      'has_archive' => true,
+     'taxonomies' => array('post_tag'),
      'supports' => array('title', 'editor', 'thumbnail'),
      )
     );
@@ -84,14 +85,16 @@ function spectacled_custom_post_type_init() {
      'public' => true,
      'menu_position' => 5,
      'has_archive' => true,
+     'taxonomies' => array('post_tag'),
      'supports' => array('title', 'editor', 'thumbnail'),
      )
     );
 }
 add_action('init', __NAMESPACE__ . '\\spectacled_custom_post_type_init');
 
-function add_tags_to_custom_post_types(){
-    register_taxonomy_for_object_type('tags', 'articles');
-    register_taxonomy_for_object_type('tags', 'get-to-know');
-}
-add_action('init', __NAMESPACE__ . '\\add_tags_to_custom_post_types');
+
+// add_action('init', __NAMESPACE__ . '\\spectacled_add_tags_to_articles', 1000);
+//     function spectacled_add_tags_to_articles(){
+//         register_taxonomy_for_object_type('tags', 'articles');
+//     }
+

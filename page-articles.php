@@ -33,7 +33,7 @@ foreach ($posts_array as $post ) : setup_postdata( $post );
 		<a href="<?php the_permalink(); ?>"><?php the_title(); ?></a>
 	</h2>
 	<!-- Images  -->
-	<div class="articleImageContainer">
+<!-- 	<div class="articleImageContainer">
 		<div class="row articleImage" id="post-<?php the_ID(); ?>">
 			<div class="col-xs-6">
 				<div class="postImage">
@@ -60,7 +60,7 @@ foreach ($posts_array as $post ) : setup_postdata( $post );
 				</div>
 			</div>
 		</div>
-
+ -->
 			<div class="entry-content">
 					<?php the_content(); ?>
 			</div>		
@@ -73,6 +73,6 @@ foreach ($posts_array as $post ) : setup_postdata( $post );
 <?php endforeach;
 wp_reset_postdata(); ?>
 
-<div style="text-align:center;">
+<div class="kittycat" style="text-align:center;">
 <?php posts_nav_link( ' &#183; ', 'previous page', 'next page' ); ?>
 </div>

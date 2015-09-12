@@ -2,8 +2,12 @@
   <article <?php post_class(); ?>>
   <div class="col-xs-12 styleposts">
     <div class="row" id="post-<?php the_ID(); ?>">
+
+      <div class="postImage">
+          <div class="postImage getToKnowSingle">
+
       <div class="col-xs-6">
-        <div class="postImage">
+        <div class="postImage getToKnow"> 
           <a href="#" data-reveal-id="myModal-<?php the_ID(); ?>-a"><?php
 
             $images = rwmb_meta( 'spec_eyewear', 'type=image&size=main-image' );
@@ -30,7 +34,7 @@
       <h2 class="entry-title"><?php the_title(); ?></h2>
     </header>
     <div class="contentCategory">
-      <p>
+      <p class="eyewear">
         Eyewear: <?php the_category(', '); ?>
       </p>
     </div>
